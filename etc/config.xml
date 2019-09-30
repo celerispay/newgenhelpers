@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<general>
+			<nphelpers>
+				<enable_sticky_sidebar>0</enable_sticky_sidebar>
+				<boostsale_color_invert>0</boostsale_color_invert>
+				<boostsale_color_1>text-orange</boostsale_color_1>
+				<boostsale_color_2>text-white</boostsale_color_2>
+			</nphelpers>
+		</general>
+	</default>
+</config>

@@ -1,0 +1,15 @@
+<?php
+
+/*
+ * block NewgenPayments\Helpers\Block\HelperBlock
+ */
+
+if ( $video_url = $block->getData('video_url') ) {
+    $media_url = $block->getNPConfig()->getMediaUrl();
+    $video_class = $block->getData('video_class');
+    echo '<video width="100%" ' .
+        (!empty($video_class) ? "class='$video_class'" : '' ) .
+        ' autoplay="autoplay" loop="loop" muted="muted" controls="controls">
+            <source src="'. $media_url . $video_url . '" type="video/mp4" />
+        </video>';
+}

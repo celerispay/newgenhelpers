@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="general" translate="label">
+			<group id="nphelpers" showInDefault="1" showInWebsite="1" showInStore="1" translate="label">
+				<label>NewgenPayments Helpers Settings</label>
+        <field id="enable_sticky_sidebar" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+          <label>Enable sticky layered navigation</label>
+          <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+        </field>
+				<field id="youtube" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Youtube link</label>
+				</field>
+				<field id="facebook" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Facebook link</label>
+				</field>
+				<field id="pinterest" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Pinterest link</label>
+				</field>
+				<field id="twitter" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Twitter link</label>
+				</field>
+				<field id="instagram" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Instagram link</label>
+				</field>
+				<field id="tumblr" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Tumblr link</label>
+				</field>
+				<field id="boostsale_color_invert" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Boostsale Logo invert</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="boostsale_color_1" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Boostsale Color 1</label>
+					<source_model>NewgenPayments\Helpers\Model\Source\BoostsalesColor</source_model>
+				</field>
+				<field id="boostsale_color_2" translate="label" type="select" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Boostsale Color 2</label>
+					<source_model>NewgenPayments\Helpers\Model\Source\BoostsalesColor</source_model>
+				</field>
+				<field id="sticky_header_logo" translate="label" type="Magento\Config\Block\System\Config\Form\Field\Image" sortOrder="300" showInDefault="1" showInWebsite="1" >
+					<label>Upload header logo</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+					<upload_dir config="system/filesystem/media" scope_info="1">newgenpayments/headerlogo</upload_dir>
+					<base_url type="media" scope_info="1">newgenpayments/headerlogo</base_url>
+					<comment><![CDATA[Allowed file types: jpg, jpeg, png, svg]]></comment>
+				</field>
+			</group>
+		</section>
+		<section id="google">
+			<group id="maps" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Google Maps</label>
+				<field id="apikey" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>API Key</label>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
+

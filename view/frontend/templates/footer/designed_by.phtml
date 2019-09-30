@@ -1,0 +1,21 @@
+<?php
+/*
+ * block Magento\Framework\View\Element\Template
+ */
+?>
+<?php
+if($block instanceof NewgenPayments\Helpers\Block\HelperBlock) {
+    $imageUrl = $block->getViewFileUrl('NewgenPayments_Helpers::images/boostsales'
+        . ($block->getNPConfig()->getBoostsalesColorInvert() ? '-invert' : '')
+        . '.png');
+?>
+<div class="dd-by-boostsales">
+    <?= __("Designed & Developed by") ?>
+    <a class="dd-by-boostsales-link" href="https://boostsales.eu/" target="__blank">
+        <?php if(!empty($imageUrl)) { ?>
+        <img class="dd-by-boostsales-img" src="<?= $imageUrl ?>" alt="BoostSales">
+        <?php } ?>
+        <strong class="dd-by-boostsales-text <?= $block->getNPConfig()->getBoostsalesColor1() ?>">Boost<span class="dd-by-boostsales-text <?= $block->getNPConfig()->getBoostsalesColor2() ?>">Sales</span></strong>
+    </a>
+</div>
+<?php } ?>
