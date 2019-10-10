@@ -20,7 +20,7 @@ interface ConfigInterface
 
     const XML_SOCIAL_BASE_LINK = 'general/nphelpers/';
 
-    const XML_SNS = ["facebook", "twitter", "tumblr", "pinterest", "youtube", "instagram"];
+    const XML_SNS = ["facebook", "twitter", "tumblr", "pinterest", "youtube", "instagram","linkedin"];
 
     const XML_GOOGLE_MAP_API = "google/maps/apikey";
 

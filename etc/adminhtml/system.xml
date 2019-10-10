@@ -23,6 +23,9 @@
 				<field id="instagram" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Instagram link</label>
 				</field>
+				<field id="linkedin" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Linkedin link</label>
+				</field>
 				<field id="tumblr" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Tumblr link</label>
 				</field>
