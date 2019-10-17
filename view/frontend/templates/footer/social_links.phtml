@@ -10,9 +10,9 @@ if (!empty($socialLinks)) {
 	<div class="social-links-container">
 	<?php foreach($socialLinks as $sns => $link) {?>
 	    <span class="social-link-item <?= $sns ?>">
-		<a target="__blank" title="<?= ucfirst($sns) ?>" href="<?= $link ?>">
-		<i class="fa fa-<?= $sns ?>"></i>
-		</a>
+			<a target="__blank" title="<?= ucfirst($sns) ?>" href="<?= $link ?>">
+				<i class="ib ib-hover ic ic-lg ic-<?= $sns ?>"></i>
+			</a>
 	    </span>
 	<?php } ?>
 	</div>
